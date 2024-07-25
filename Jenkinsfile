@@ -35,7 +35,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scmGit(branches: [[name: params.BRANCH_OR_TAG]], extensions: [], userRemoteConfigs: [[credentialsId: 'github_firegate666', url: 'git@github.com:firegate666/ballz_out_blockbreaker.git']])
+                checkout scmGit(branches: [[name: params.BRANCH_OR_TAG]], extensions: [], userRemoteConfigs: [[credentialsId: 'github_firegate666', url: 'git@github.com:firegate666/RRR.git']])
             }
         }
 
