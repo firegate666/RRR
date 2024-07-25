@@ -26,7 +26,7 @@ pipeline {
     }
 
     parameters {
-        gitParameter branch: '', branchFilter: '.*', defaultValue: 'origin/main', name: 'BRANCH_OR_TAG', quickFilterEnabled: true, selectedValue: 'DEFAULT', sortMode: 'ASCENDING_SMART', tagFilter: '*', type: 'GitParameterDefinition'
+        gitParameter branch: '', branchFilter: '.*', defaultValue: 'origin/master', name: 'BRANCH_OR_TAG', quickFilterEnabled: true, selectedValue: 'DEFAULT', sortMode: 'ASCENDING_SMART', tagFilter: '*', type: 'GitParameterDefinition'
         choice choices: ['Standalone', 'Win', 'Win64', 'OSXUniversal', 'Linux64', 'iOS', 'Android', 'WebGL', 'WindowsStoreApps', 'tvOS'], name: 'BUILD_TARGET'
         booleanParam 'IL2CPP_BUILD'
         booleanParam defaultValue: false, name: 'CLEAN_BUILD'
